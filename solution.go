@@ -1,5 +1,7 @@
 package square
 
+import "math"
+
 // Define custom int type to hold sides number and update CalcSquare signature by replacing #yourTypeNameHere#
 
 type sideCountType int
@@ -16,7 +18,7 @@ const (
 	SidesSquare   sideCountType = 4
 )
 
-func CalcSquare(sideLen float64, sidesNum sideCountType) float64 {
+func CalcSquare(sideLen float64, sidesNum sideCountType) (res float64) {
 
 	switch sidesNum {
 	case SidesSquare:
